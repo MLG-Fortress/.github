@@ -21,10 +21,10 @@ jobs:
       contents: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@master
+        uses: actions/checkout@main
 
       - name: Set up JDK ${{ inputs.java-version }}
-        uses: actions/setup-java@master
+        uses: actions/setup-java@main
         with:
           java-version: ${{ inputs.java-version }}
           distribution: 'temurin'
